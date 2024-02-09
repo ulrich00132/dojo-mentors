@@ -9,8 +9,8 @@ import { singleLevelNestedRoutes } from "@/app/libs/routes";
 import stripe from 'stripe';
 
 export async function POST(
-    request: Request,
-) {
+    request: Request
+){
     const currentUser = await getCurrentUser();
 
     const firstName = currentUser?.firstName;
@@ -49,12 +49,12 @@ export async function POST(
         type: 'account_onboarding',
       });
 
-      if (stripeAccountLink) {
-        return {
-          url: stripeAccountLink.url
-        };
-      }
+      // if (stripeAccountLink) {
+      //   return {
+      //     url: stripeAccountLink.url
+      //   };
+      // }
 
 
-    return NextResponse.json(stripeAccountLink);
+    return NextResponse.json(stripeAccountLink.url);
 };
