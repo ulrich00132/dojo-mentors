@@ -27,17 +27,6 @@ export async function POST(
         conversationId
     } = body
 
-    const conversation = await prisma.user.update({
-        where: {
-            id: currentUser.id
-        },
-        data: {
-            conversations: {
-                create: {
-                    messages: bodyMessage
-                }
-            }
-        }
-    })
+    
     
 }
