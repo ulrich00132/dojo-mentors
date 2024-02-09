@@ -102,7 +102,7 @@ const CalendarModalMentor: React.FC<CalendarModalProps> = ({
     let bodyContent = (
         <div>
             The mentor calendar of {profile?.mentor.firstName}
-            <SessionReservation 
+            {/* <SessionReservation 
                 price={profile?.sessionPrice}
                 totalPrice={totalPrice}
                 onChangeDate={(value) => setDateRange(value)}
@@ -110,7 +110,10 @@ const CalendarModalMentor: React.FC<CalendarModalProps> = ({
                 onSubmit={onCreateBooking}
                 disabled={isLoading}
                 disabledDates={disabledDates}
-            />
+                onChangeDuration={() => { } } 
+                sessionDuration={[]} 
+                rangeHour={[]}                
+            /> */}
         </div>
     )
   
