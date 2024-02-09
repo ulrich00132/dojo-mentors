@@ -33,7 +33,7 @@ export default async function handler(req: any, res: any) {
         client_secret: accountSession.client_secret,
       });
     } catch (error: any) {
-      console.error('An error occurred when calling the Stripe API to create an account session', error);
+      
       res.status(500);
       res.send({error: error.message});
     }
