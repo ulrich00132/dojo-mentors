@@ -37,5 +37,7 @@ export default async function handler(req: any, res: any) {
       res.status(500);
       res.send({error: error.message});
     }
+  } else {
+    res.status(405).end();
   }
 }
