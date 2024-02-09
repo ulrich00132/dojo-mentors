@@ -1,0 +1,8 @@
+.authImageWrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 620/1024;
+    background-image: url('/images/login-signin.png');
+    background-size: cover;
+}
