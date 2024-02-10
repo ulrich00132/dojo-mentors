@@ -12,6 +12,7 @@ interface HomeProps {
   searchParams: IProfileParams
 }
 
+export const dynamic = 'force-dynamic'
 
 const Home = async ({ searchParams }: HomeProps) => {
   
