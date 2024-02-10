@@ -1,7 +1,7 @@
 
 import prisma from '@/app/libs/prismadb';
 
-import { categories } from "@/app/libs/data";
+// import { categories } from "@/app/libs/data";
 
 
 export interface IProfileParams {
@@ -30,9 +30,9 @@ export default async function getProfiles({
            query.userId = mentorId
         }
 
-        if (category) {
-            // query.category = category
-        }
+        // if (category) {
+        //     query.category = category
+        // }
 
         
         

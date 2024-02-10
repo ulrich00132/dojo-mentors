@@ -5,7 +5,6 @@ import EmptyState from "../components/EmptyState";
 
 import ProfileCard from "../components/profiles/ProfileCard";
 
-import { cardCategories } from "../components/profiles/ProfileCard";
 import { categories } from "../libs/data";
 
 
@@ -31,8 +30,6 @@ const Home = async ({ searchParams }: HomeProps) => {
     );
 
     return profileCategories.some((profileCategory) => profileCategory.label === searchParams.category)
-    
-
     
   })
 
@@ -101,28 +98,6 @@ const Home = async ({ searchParams }: HomeProps) => {
             })}
           </div>
         )}
-        {/* {profiles.map((profile) => {
-          return (
-            <ProfileCard 
-              key={profile.id}
-              data={profile}
-              profileCategories={[]}
-              
-            />
-            )
-          })}
-
-        {filteredProfiles.map((profile) => {
-          return (
-            <ProfileCard 
-              key={profile.id}
-              data={profile}
-            />
-          )
-        })} */}
-
-        
-        
         
 
       </div>
