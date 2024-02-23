@@ -249,6 +249,19 @@ const LandingPage = () => {
         <h3 className="text-black">🗣️ Envie de discuter? </h3>
         <p className="text-rose hover:underline hover:cursor-pointer">hello@dojomentors.com </p>
       </div>
+
+      <div className="flex flex-col justify-center items-center gap-4">
+        <Image
+          src="/images/dojo-mentors-logo.png"
+          alt="Dojo Mentors logo"
+          width={100}
+          height={100}
+        />
+
+        <div className="text-sm text-neutral-700 mb-4">
+        2024 © Sortlist - Tous droits réservés - Conditions générales Confidentialité Support Plan du site
+        </div>
+      </div>
     </div>
   );
 };

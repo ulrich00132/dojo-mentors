@@ -39,7 +39,7 @@ import {
       <Body style={main} className="bg-white">
         <Container style={container}>
           <Img
-            src="https://res.cloudinary.com/dxvmlqlqk/image/upload/v1707286785/dojo-mentors-logo_vjhbqh.png"
+            src={`${baseUrl}/public/images/dojo-mentors-logo.png`}
             width="100"
             height="100"
             alt="Dojo Mentor"
