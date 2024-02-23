@@ -140,13 +140,13 @@ const LandingPage = () => {
             hover:shadow-[5px_5px_0px_0px_rgb(0,0,0)]
             "
       >
-        M'inscrire pour le lancement 🚀
+        M{"'"}inscrire pour le lancement 🚀
       </div>
         
         <p className="px-4 lg:px-12 text-xl text-center text-neutral-600 mt-8">
-          Dojo Mentors est une communauté de personnes qui échangent leurs connaissances à travers une session de <strong className="text-rose">coaching</strong> ou de <strong className="text-rose">mentoring</strong> . Une communauté de personnes comme toi qui partagent ou apprennent de nouvelles compétences auprès de personnes qui
+          Dojo Mentors est une communauté de personnes qui échangent leurs connaissances à travers une session de <strong className="text-rose">coaching</strong> ou de <strong className="text-rose">mentoring</strong>. Une communauté de personnes comme toi qui partagent ou apprennent de nouvelles compétences auprès de personnes qui
           ont réellement le savoir dont elles parlent car elles
-          l'utilisent tous les jours dans leurs activés.
+          l{"'"}utilisent tous les jours dans leurs activés.
         </p>
         
         <div className="flex flex-col lg:flex-row gap-4 items-center">
