@@ -44,8 +44,8 @@ const Navbar: React.FC<NavbarProps> = ({
                     "
                 >
                     <Logo 
-                        width={80}
-                        height={80}
+                        width={100}
+                        height={100}
                     />
                     <Links />
                     <UserLogin currentUser={currentUser} />
@@ -53,7 +53,7 @@ const Navbar: React.FC<NavbarProps> = ({
                 </div>
             </Container>
         </div>
-        <Categories />
+        {/* <Categories /> */}
         {pathname?.includes("account") && (
             <Nav />
         ) }

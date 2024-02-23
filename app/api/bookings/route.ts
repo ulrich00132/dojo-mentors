@@ -111,7 +111,7 @@ export async function POST(
     const resend = new Resend(process.env.RESEND_API_KEY);
     const mailToMentee = await resend.emails.send({
         from: "Dojo Mentor <onboarding@resend.dev>",
-        to: 'ulrich_00132@hotmail.com',
+        to: currentUser.email,
         subject: "🎉 Votre réservation de Mentoring",
         react: VercelInviteUserEmail({ username: currentUser.firstName })
     });
@@ -120,7 +120,7 @@ export async function POST(
     // Send Email to Mentor
     const mailToMentor = await resend.emails.send({
         from: "Dojo Mentor <onboarding@resend.dev>",
-        to: 'ulrich_00132@hotmail.com',
+        to: profileAndBooking.mentor.email,
         subject: "🙌 Une nouvelle réservation",
         react: VercelInviteUserEmail({ username: profileAndBooking.mentor.firstName })
     });

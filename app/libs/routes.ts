@@ -1,14 +1,16 @@
 export const routes = {
-    signIn: '/login',
-    signUp: '/signup',
-    account: '/account',
-    mentors: '/mentors',
-    checkout: 'checkout',
+    signIn: "/login",
+    signUp: "/signup",
+    account: "/account",
+    booking: "/booking",
+    mentors: "/mentors",
+    checkout: "/checkout",
     referral: "/referral",
     subscription: "/subscription",
     mentoring: "/mentoring",
     mentees: "/mentees",
-    resetPassword: "/reset-password"
+    resetPassword: "/reset-password",
+    reservations: "/reservations"
 };
 
 export const singleLevelNestedRoutes = {

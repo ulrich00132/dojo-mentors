@@ -128,39 +128,7 @@ const Categories = () => {
 
 
         </div>
-        {/* <div className="flex flex-row justify-between">
-            <div className="flex flex-row gap-4 text-sm">
-                {selectedCategory?.skills.map((skill, index) => (
-                    <div
-                        key={index}
-                        className="
-                            flex
-                            flex-row
-                            items-center
-                            border
-                            border-black
-                            px-2
-                            cursor-pointer
-                        "
-                    >
-                        {skill.expertise}
-                    </div>
-                ))}
-
-            </div>
         
-            <div className="flex flex-row items-center gap-2 text-sm p-1 cursor-pointer">
-                <FiFilter 
-                    size={16}
-                />
-                <div>
-                    Filtre
-                </div>
-            </div>
-                
-
-
-        </div> */}
     </Container>
   )
 }

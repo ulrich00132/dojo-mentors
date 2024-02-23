@@ -99,6 +99,8 @@ const UserMenu: React.FC<UserMenuProps> = ({
                 cursor-pointer
                 "
             >
+                {/* Notification icon bell is hidden  */}
+                <div className='hidden'>
                 <BiBell size={18} />
                 <div 
                     className='
@@ -120,6 +122,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
                     '
                 >
                     20
+                </div>
                 </div>
 
             </div>
@@ -173,8 +176,15 @@ const UserMenu: React.FC<UserMenuProps> = ({
                             />
 
                         )}
+                        
                         <MenuItem 
-                            onClick={() => router.push("/booking")}
+                            onClick={() => router.push(routes.account)}
+                            label='Mon profil'
+                            icon={AiOutlineUser}
+                        />
+
+                        <MenuItem 
+                            onClick={() => router.push(routes.booking)}
                             label='Mes sessions'
                             icon={AiOutlineSchedule}
                         />
@@ -184,25 +194,23 @@ const UserMenu: React.FC<UserMenuProps> = ({
                             icon={FaUserNinja}
                         />
                         <MenuItem 
-                            onClick={() => router.push('/reservations')}
+                            onClick={() => router.push(routes.reservations)}
                             label='Mes réservations'
                             icon={AiOutlineCalendar}
                         />
-                        <MenuItem 
-                            onClick={() => router.push("/account")}
-                            label='Mon profil'
-                            icon={AiOutlineUser}
-                        />
+                        
                         <MenuItem 
                             onClick={() => router.push(routes.mentees)}
                             label='Abonnés'
                             icon={PiStudentFill}
                         />
-                        <MenuItem 
+                        {/* <MenuItem 
                             onClick={() => router.push("/dashboard")}
                             label='Paramètres'
                             icon={AiOutlineSetting}
-                        />
+                        /> */}
+
+                        
 
                         <hr />
                         <MenuItem 

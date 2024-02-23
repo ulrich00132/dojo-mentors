@@ -22,7 +22,7 @@ const Logo : React.FC<ImageProps> = ({
     <Image 
         alt='logo'
         className='md:block cursor-pointer'
-        src="/images/book-a-mentor-logo.svg"
+        src="/images/dojo-mentors-logo.svg"
         height={height}
         width={width}
         onClick={() => router.push('/')}

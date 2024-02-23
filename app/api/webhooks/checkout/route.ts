@@ -105,7 +105,7 @@ export async function POST(req: Request) {
         // }
         
 
-        console.log(line_items);
+        
     }
 
     

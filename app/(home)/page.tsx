@@ -2,6 +2,7 @@ import getCurrentUser from "../actions/getCurrentUser";
 import getProfiles, { IProfileParams } from "../actions/getProfiles";
 import Container from "../components/Container";
 import EmptyState from "../components/EmptyState";
+import LandingPage from "../components/launch/LandingPage";
 
 import ProfileCard from "../components/profiles/ProfileCard";
 
@@ -46,7 +47,7 @@ const Home = async ({ searchParams }: HomeProps) => {
 
   return (
     <Container>
-      <div>
+      {/* <div>
         {searchParams.category ? (
           <div
             className="
@@ -99,10 +100,10 @@ const Home = async ({ searchParams }: HomeProps) => {
             })}
           </div>
         )}
-        
+      </div> */}
 
-      </div>
-      
+      <LandingPage />
+
     </Container>
   )
 }
