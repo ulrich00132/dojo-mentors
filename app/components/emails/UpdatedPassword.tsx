@@ -31,7 +31,7 @@ import {
       <Body style={main}>
         <Container style={container}>
           <Img
-            src="https://res.cloudinary.com/dxvmlqlqk/image/upload/v1707286785/dojo-mentors-logo_vjhbqh.png"
+            src="https://www.dojomentors.com/_next/image?url=%2Fimages%2Fdojo-mentors-logo.png&w=128&q=75"
             width="100"
             height="100"
             alt="Dojo Mentors"

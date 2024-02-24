@@ -39,7 +39,7 @@ import {
       <Body style={main} className="bg-white">
         <Container style={container}>
           <Img
-            src={`${baseUrl}/public/images/dojo-mentors-logo.png`}
+            src={`https://www.dojomentors.com/_next/image?url=%2Fimages%2Fdojo-mentors-logo.png&w=128&q=75`}
             width="100"
             height="100"
             alt="Dojo Mentor"

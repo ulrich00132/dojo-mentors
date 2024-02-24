@@ -42,7 +42,7 @@ import {
         <Body style={main}>
           <Container style={container}>
             <Section style={logo}>
-              <Img width={114} src={"https://res.cloudinary.com/dxvmlqlqk/image/upload/v1707286785/dojo-mentors-logo_vjhbqh.png"} />
+              <Img width={114} src={"https://www.dojomentors.com/_next/image?url=%2Fimages%2Fdojo-mentors-logo.png&w=128&q=75"} />
             </Section>
             <Section style={sectionsBorders}>
               <Row>
