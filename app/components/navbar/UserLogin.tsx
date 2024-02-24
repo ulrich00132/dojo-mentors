@@ -43,12 +43,17 @@ const UserLogin: React.FC<userLoginProps> = ({
                     label="Rejoindre"
                     onClick={registerModal.onOpen}
                 />
-                <div className="block lg:hidden">
-                    <BiMenu 
-                        size={32}
-                        className ='cursor-pointer'
-                    />
-                </div>
+                {
+                    currentUser && (
+                    <div className="block lg:hidden">
+                        <BiMenu 
+                            size={32}
+                            className ='cursor-pointer'
+                        />
+                    </div>
+
+                    )
+                }
                 
             </>
         )}
