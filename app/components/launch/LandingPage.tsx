@@ -259,7 +259,7 @@ const LandingPage = () => {
         />
 
         <div className="text-sm text-neutral-700 mb-4">
-        2024 © Sortlist - Tous droits réservés - Conditions générales Confidentialité Support Plan du site
+        2024 © Dojo Mentors - Tous droits réservés - Conditions générales Confidentialité Support Plan du site
         </div>
       </div>
     </div>
