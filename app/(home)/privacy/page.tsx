@@ -4,8 +4,8 @@ import React from "react";
 const PrivacyPoliciesPage = () => {
   return (
     <Container>
-      <div className="flex flex-col gap-8 mt-8 privacy">
-        <h2 className="sectionTitle">Politique de confidentialité</h2>
+      {<div className="flex flex-col gap-8 mt-8 privacy">
+        <h2 className="sectionTitle">{"Politique de confidentialité"}</h2>
         <p>
           Le site web Dojo Mentors est détenu par Nubiwi, qui est un contrôleur
           de données de vos données personnelles.
@@ -135,7 +135,7 @@ const PrivacyPoliciesPage = () => {
           question relative aux droits individuels et à vos informations
           personnelles, vous pouvez envoyer un courriel à hello@dojomentors.com.
         </p>
-      </div>
+      </div>}
     </Container>
   );
 };

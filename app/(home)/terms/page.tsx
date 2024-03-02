@@ -4,7 +4,7 @@ const TermsAndConditionsPage = () => {
   return (
     <Container>
       
-      <div className="flex flex-col gap-8 mt-8 terms">
+      {<div className="flex flex-col gap-8 mt-8 terms">
         <h2 className="sectionTitle">Termes et conditions générales</h2>
         <p>Bienvenue sur Dojo Mentors !</p>
         <p>
@@ -291,7 +291,7 @@ const TermsAndConditionsPage = () => {
           fournis gratuitement, nous ne serons pas responsables de toute perte
           ou dommage de quelque nature que ce soit.
         </p>
-      </div>
+      </div>}
     </Container>
   );
 };
