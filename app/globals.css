@@ -91,6 +91,50 @@ body,
   animation: loading 2s infinite ease;
 }
 
+/* Terms and conditions */
+.sectionTitle {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.terms h4 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.terms {
+  font-size: 1.2rem
+}
+
+.terms p {
+  color: rgb(82 82 82);
+}
+
+.terms ul {
+  list-style-type: square;
+  color: rgb(82 82 82);
+}
+
+/* Privacy */
+
+.privacy h4 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.privacy {
+  font-size: 1.2rem
+}
+
+.privacy p {
+  color: rgb(82 82 82);
+}
+
+.privacy ul {
+  list-style-type: square;
+  color: rgb(82 82 82);
+}
+
 @keyframes loading {
   0% {
     -webkit-transform: rotate(0deg);
@@ -107,4 +151,5 @@ body,
     width: 80vw;
     min-width: initial;
   }
-}
+};
+

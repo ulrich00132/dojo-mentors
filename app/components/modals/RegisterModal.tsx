@@ -19,6 +19,7 @@ import { toast } from 'react-hot-toast';
 import Button from '../Button';
 import Link from 'next/link';
 import { signIn } from 'next-auth/react';
+import {routes} from "@/app/libs/routes";
 
 
 const RegisterModal = () => {
@@ -107,8 +108,11 @@ const RegisterModal = () => {
         required
       />
 
-      <p>En vous inscrivant, vous acceptez nos <Link href={"/"} className='linksStandard'>
+      <p>En vous inscrivant, vous acceptez nos <Link href={routes.terms} className='linksStandard'>
           termes et conditions
+            </Link>{", "}
+            <Link href={routes.privacy} className='linksStandard'>
+          notre politique de confidentialité
             </Link>
             <span> ainsi que les termes et conditions de notre partenaire de paiement <a href={"https://stripe.com/en-be/legal/connect-account/recipient"} target='_blank' rel='noopener noreferrer' className='underline hover:text-green'>Stripe</a></span> 
       .</p>

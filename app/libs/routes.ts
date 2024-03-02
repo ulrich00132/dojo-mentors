@@ -10,7 +10,9 @@ export const routes = {
     mentoring: "/mentoring",
     mentees: "/mentees",
     resetPassword: "/reset-password",
-    reservations: "/reservations"
+    reservations: "/reservations",
+    terms: "/terms",
+    privacy: "/privacy",
 };
 
 export const singleLevelNestedRoutes = {
