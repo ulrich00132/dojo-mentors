@@ -247,7 +247,7 @@ const LandingPage = () => {
 
       <div className="flex flex-col justify-center items-center border-t-neutral-100">
         <h3 className="text-black">🗣️ Envie de discuter? </h3>
-        <p className="text-rose hover:underline hover:cursor-pointer">hello@dojomentors.com </p>
+        <p className="text-rose hover:underline hover:cursor-pointer">support@dojomentors.com </p>
       </div>
 
       <div className="flex flex-col justify-center items-center gap-4">

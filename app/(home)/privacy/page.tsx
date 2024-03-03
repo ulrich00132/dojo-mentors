@@ -65,7 +65,7 @@ const PrivacyPoliciesPage = () => {
           pas recevoir notre bulletin d'information ou nous contacter
           directement à partir du site web. Les utilisateurs qui ne savent pas
           quelles informations sont obligatoires sont invités à nous contacter
-          via hello@dojomentors.com.`}
+          via support@dojomentors.com.`}
         </p>
         <h4>{"Vos droits :"}</h4>
         <p>
@@ -133,7 +133,7 @@ const PrivacyPoliciesPage = () => {
           {`Si vous souhaitez nous contacter pour comprendre davantage la présente
           politique ou si vous souhaitez nous contacter concernant toute
           question relative aux droits individuels et à vos informations
-          personnelles, vous pouvez envoyer un courriel à hello@dojomentors.com.`}
+          personnelles, vous pouvez envoyer un courriel à support@dojomentors.com.`}
         </p>
       </div>
     </Container>
