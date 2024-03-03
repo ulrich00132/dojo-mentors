@@ -59,7 +59,7 @@ export async function POST(
     // Send Email to User
     const resend = new Resend(process.env.RESEND_API_KEY);
     const data = await resend.emails.send({
-        from: "onboarding@resend.dev",
+        from: "welcome@dojomentors.com",
         to: user.email,
         subject: "Bienvenue sur Dojo Mentors",
         react: GithubAccessTokenEmail({ username: user.firstName })

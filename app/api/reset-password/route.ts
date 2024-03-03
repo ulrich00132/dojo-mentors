@@ -34,7 +34,7 @@ export async function POST(
 
     // Send Email to User
     const sendEmail = await resend.emails.create({
-        from: "onboarding@resend.dev",
+        from: "noreply@dojomentors.com",
         to: currentUser.email,
         subject: "Mise à jour de votre mot de passe",
         react: ConfirmNewPasswordEmail({ username: currentUser.firstName})

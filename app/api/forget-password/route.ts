@@ -54,7 +54,7 @@ export async function POST(
 
     // Send Email to User
     const emailToSend = await resend.emails.create({
-        from: "onboarding@resend.dev",
+        from: "noreply@dojomentors.com",
         to: currentUser.email,
         subject: "Votre demande de réinitialiser votre mot de passe",
         react: ResetPasswordEmail({ 
