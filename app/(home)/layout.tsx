@@ -20,7 +20,7 @@ import SubscriptionModal from '../components/modals/SubscriptionModal';
 const font = Work_Sans({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Book a mentor',
+  title: 'Dojo Mentors',
   description: 'Book a mentor to blow your full potential',
 }
 

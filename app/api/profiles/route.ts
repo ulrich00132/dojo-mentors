@@ -75,41 +75,29 @@ export async function POST(
         const stripe = require('stripe')(process.env.NEXT_PUBLIC_STRIPE_SECRET_KEY);
 
         try {
-            const account = await stripe.accounts.create({
-              type: 'express',
-              country: location.value,
-              email: currentUser.email,
-              capabilities: {
-                card_payments: {
-                  requested: true,
-                },
-                transfers: {
-                  requested: true,
-                },
-              },
-              settings: {
-                payouts: {
-                  schedule: {
-                    interval: 'manual',
-                  }
-                }
-              }
+            // const account = await stripe.accounts.create({
+            //   type: 'express',
+            //   country: location.value,
+            //   email: currentUser.email,
+            //   capabilities: {
+            //     card_payments: {
+            //       requested: true,
+            //     },
+            //     transfers: {
+            //       requested: true,
+            //     },
+            //   },
+            //   settings: {
+            //     payouts: {
+            //       schedule: {
+            //         interval: 'manual',
+            //       }
+            //     }
+            //   }
 
-            });
-
-            // CREATE STRIPE ACCOUNT LINK
-            // const stripeAccountLink = await stripe.accountLinks.create({
-            //   account: stripeAccount.id,
-            //   refresh_url: 
-            //     process.env.NEXT_PUBLIC_APP_URL + singleLevelNestedRoutes.account.payments,
-            //   return_url: 
-            //     process.env.NEXT_PUBLIC_APP_URL + singleLevelNestedRoutes.account.payments,
-            //   type: 'account_onboarding',
             // });
 
-            // if (stripeAccountLink) {
-            //   return stripeAccountLink;
-            // }
+            
 
             // Create Stripe Product
             const stripeProduct = await stripe.products.create({
@@ -220,7 +208,7 @@ export async function POST(
                     // slug: `${currentUser.firstName}-${currentUser.lastName}`.toLowerCase()
                     slug: `${currentUser.firstName.normalize("NFD").replace(/[\u0300-\u036f]/g, "")}-${currentUser.lastName.normalize("NFD").replace(/[\u0300-\u036f]/g, "")}`.toLowerCase(),
 
-                    stripeAccountId: account.id,
+                    stripeAccountId: "myStripeAccountId",
                     stripeSessionProductId: stripeProduct.id,
                     stripeSessionProductPriceId: stripeProductPrice.id,
                     
