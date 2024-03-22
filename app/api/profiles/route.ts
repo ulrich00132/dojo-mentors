@@ -75,27 +75,27 @@ export async function POST(
         const stripe = require('stripe')(process.env.NEXT_PUBLIC_STRIPE_SECRET_KEY);
 
         try {
-            // const account = await stripe.accounts.create({
-            //   type: 'express',
-            //   country: location.value,
-            //   email: currentUser.email,
-            //   capabilities: {
-            //     card_payments: {
-            //       requested: true,
-            //     },
-            //     transfers: {
-            //       requested: true,
-            //     },
-            //   },
-            //   settings: {
-            //     payouts: {
-            //       schedule: {
-            //         interval: 'manual',
-            //       }
-            //     }
-            //   }
+            const account = await stripe.accounts.create({
+              type: 'express',
+              country: location.value,
+              email: currentUser.email,
+              capabilities: {
+                card_payments: {
+                  requested: true,
+                },
+                transfers: {
+                  requested: true,
+                },
+              },
+              settings: {
+                payouts: {
+                  schedule: {
+                    interval: 'manual',
+                  }
+                }
+              }
 
-            // });
+            });
 
             
 
@@ -208,7 +208,7 @@ export async function POST(
                     // slug: `${currentUser.firstName}-${currentUser.lastName}`.toLowerCase()
                     slug: `${currentUser.firstName.normalize("NFD").replace(/[\u0300-\u036f]/g, "")}-${currentUser.lastName.normalize("NFD").replace(/[\u0300-\u036f]/g, "")}`.toLowerCase(),
 
-                    stripeAccountId: "myStripeAccountId",
+                    stripeAccountId: account.id,
                     stripeSessionProductId: stripeProduct.id,
                     stripeSessionProductPriceId: stripeProductPrice.id,
                     
