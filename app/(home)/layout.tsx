@@ -37,6 +37,7 @@ export default async function RootLayout({
     <html lang="en">
       <head>
         <Script 
+          id='gtag'
           async 
           src="https://www.googletagmanager.com/gtag/js?id=G-WJY315KHW2">
         </Script>
