@@ -13,9 +13,10 @@ import ToasterProvider from '../providers/ToasterProvider';
 
 import getCurrentUser from '../actions/getCurrentUser';
 
-
 import Nav from '../components/dashboard/Nav/Nav';
 import SubscriptionModal from '../components/modals/SubscriptionModal';
+
+import Script from "next/script";
 
 const font = Work_Sans({ subsets: ['latin'] })
 
@@ -34,6 +35,23 @@ export default async function RootLayout({
   
   return (
     <html lang="en">
+      <head>
+        <Script 
+          async 
+          src="https://www.googletagmanager.com/gtag/js?id=G-WJY315KHW2">
+        </Script>
+
+        <Script id='google-analytics'>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-WJY315KHW2');
+          
+          `}
+        </Script>
+      </head>
       <body className={font.className}>
         <ToasterProvider />
         <MentorModal />
@@ -47,6 +65,7 @@ export default async function RootLayout({
           {children} 
         </div>
       </body>
+      <Script />
     </html>
   )
 }
