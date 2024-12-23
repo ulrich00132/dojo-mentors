@@ -52,6 +52,9 @@ export default function RootLayout({
 
           `}
       </Script>
+        
+    <script async data-website-name="dojomentors.com" src="http://localhost:3000/script.js"></script>
+  
       </head>
       <body className={font.className}>
         {children}
