@@ -72,7 +72,9 @@ export default async function RootLayout({
 
       {/* Exorus Tracking Code */}
     
-    <script async data-website-name="dojomentors.com" src="http://localhost:3000/script.js"></script>
+    
+    <script async data-website-name="dojomentors.com" src="http://localhost:3000/tracker/user-activity-tracker.js"></script>
+  
   
       </head>
       <body className={font.className}>
