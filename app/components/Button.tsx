@@ -36,6 +36,7 @@ const Button : React.FC<ButtonProps> = ({
           flex
           justify-center
           items-center
+          cp-event-name=Button+Subscription
           
           ${outline ? 'bg-white' : 'bg-black'}
           ${outline ? 'border-black' : 'border-black'}
