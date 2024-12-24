@@ -71,9 +71,9 @@ export default async function RootLayout({
       </Script>
 
       {/* ClickParser Tracking Code */}
-    
-    <script defer data-domain="dojomentors.com" src="http://localhost:3000/tracker/user-activity-tracker.js"></script>
   
+    <script async website-name="dojomentors.com" src="http://localhost:3000/tracker/user-activity-tracker.js"></script>
+    
       </head>
       <body className={font.className}>
         <ToasterProvider />
