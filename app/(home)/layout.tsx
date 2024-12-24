@@ -72,7 +72,9 @@ export default async function RootLayout({
 
       {/* ClickParser Tracking Code */}
   
-    <script async website-name="dojomentors.com" src="http://localhost:3000/tracker/user-activity-tracker.js"></script>
+    
+    <script async website-name="dojomentors.com" src="http://localhost:3000/tracker/spider.js"></script>
+  
     
       </head>
       <body className={font.className}>
