@@ -54,8 +54,9 @@ export default function RootLayout({
       </Script>
         
     
-    <script defer data-domain="dojomentors.com" src="http://localhost:3000/tracker/user-activity-tracker.js"></script>
-  
+
+    <script defer data-domain="dojomentors.com" src="http://localhost:3000/api/tracker/user-activity-tracker"></script>
+    
       </head>
       <body className={font.className}>
         {children}
